@@ -1,0 +1,9 @@
+1. whoami 
+2. man
+3. pwd
+4. clear
+5. ls
+6. cd
+7. mkdir
+8. touch
+
