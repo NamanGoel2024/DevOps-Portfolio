@@ -24,7 +24,21 @@ Commands:
            for ex- mkdir -p username/Cars/Category/Sport
 8. touch : used to create empty files(can also add extemsions).
              If file already exists it will modify timestamps of last modified time.
+9. rmdir : use to delete empty directories only.
+10.  rm : used to delete items
+              Some Important flags/options :
+                       -v (verbose) : explain what is being done (can be used in many other                                                   commands)
+                       -r (recursive) : used to delete directories (could contain multiple files)
+                       -i (interactive) : interacts with user ask for single item whether to keep                                                     or not
+11. open : it is mac command to open file
+     xdg-open: is used for WSL 
+                          need to install package first by
+                           sudo apt install xdg-utils
 
+12. mv : used to move files
+              mv <filename> <path>
+              also used to rename files
+              mv <filename> <new_filename>
 
 
 
