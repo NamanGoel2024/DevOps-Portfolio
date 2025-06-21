@@ -6,4 +6,8 @@
 6. cd
 7. mkdir
 8. touch
+9. rmdir
+10. rm
+11. open for mac. xdg-open for wsl
+12. mv 
 

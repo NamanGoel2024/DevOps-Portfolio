@@ -1,3 +1,6 @@
+Hi, I am Naman Goel.
+This repo is to track my progress and I am preparing notes also you can use it to learn. Hope it helps you 
+
 20 Jun 2025
 
 History of Linux/gnu (unix like family)
@@ -22,7 +25,7 @@ Commands:
 7. mkdir : used to make folders in directories
             To create multiple folder in single statement -p  cab be used.
            for ex- mkdir -p username/Cars/Category/Sport
-8. touch : used to create empty files(can also add extemsions).
+8. touch : used to create empty files(can also add extensions).
              If file already exists it will modify timestamps of last modified time.
 9. rmdir : use to delete empty directories only.
 10.  rm : used to delete items
@@ -32,8 +35,8 @@ Commands:
                        -i (interactive) : interacts with user ask for single item whether to keep                                                     or not
 11. open : it is mac command to open file
      xdg-open: is used for WSL 
-                          need to install package first by
-                           sudo apt install xdg-utils
+                         It is needed to install the package first by
+                         sudo apt install xdg-utils
 
 12. mv : used to move files
               mv <filename> <path>
