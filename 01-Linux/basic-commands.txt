@@ -9,5 +9,19 @@
 9. rmdir
 10. rm
 11. open for mac. xdg-open for wsl
-12. mv 
-
+12. mv
+13. cp 
+14. head 
+15. tail 
+16. date    
+17. cat 
+18. less 
+19. echo 
+20. wc 
+21. Piping ( | )
+22. sort 
+23. uniq 
+24. Special Characters
+25. diff 
+26. find 
+27. grep 
