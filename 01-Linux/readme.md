@@ -30,9 +30,9 @@ Commands:
 9. rmdir : use to delete empty directories only.
 10.  rm : used to delete items
               Some Important flags/options :
-                       -v (verbose) : explain what is being done (can be used in many other                                                   commands)
+                       -v (verbose) : explain what is being done (can be used in many other commands)
                        -r (recursive) : used to delete directories (could contain multiple files)
-                       -i (interactive) : interacts with user ask for single item whether to keep                                                     or not
+                       -i (interactive) : interacts with user ask for single item whether to keep or not
 11. open : it is mac command to open file
      xdg-open: is used for WSL 
                          It is needed to install the package first by
@@ -58,17 +58,17 @@ Commands:
 16.  date : tells the current date and time 
            Where it can be used :
            Redirection :
-           date > today.txt : writes the date output to today.txt. If some data already                    exists in today.txt file thein it overwrites the data.
+           date > today.txt : writes the date output to today.txt. If some data already exists in today.txt file thein it overwrites the data.
            date >> today.txt : appends the today.txt and writes the data
-           Redirection can be used in many other commands also like ls,pwd, whoami,                etc . 
+           Redirection can be used in many other commands also like ls,pwd, whoami,etc . 
 
 17. cat : used to concatenate and read 
-             Syntax : cat fruits vegetables (it will concatenate and prints content of fruits                             first followed by content of vegetables).
+             Syntax : cat fruits vegetables (it will concatenate and prints content of fruits first followed by content of vegetables).
               We can use redirection here like -
                cat fruits vegetables > groceries
               ** While direction if file not exists it will create it automatically**
                option -n : it will print line numbers.
-18.  less : it will print the content of file in more interactive UI. Preferred for long                          files.
+18.  less : it will print the content of file in more interactive UI. Preferred for long files.
                Press "g" to reach start of file. 
                Press "G" to reach end of file. 
                type "/word" and hit enter to search the word in file.
@@ -85,13 +85,13 @@ Commands:
      Multiple commands can be chained together.
 
      For ex - 
-                    ls -l | wc   It counts the number of lines, word, and bytes of the output                                           of first command.
-22. sort : it sorts the file items but doesn't update or store the sorted files it just                        prints to terminal. Piping and Redirection can be used with this sort.
+                    ls -l | wc   It counts the number of lines, word, and bytes of the output of first command.
+22. sort : it sorts the file items but doesn't update or store the sorted files it just prints to terminal. Piping and Redirection can be used with this sort.
                 Options:
                               -u : removes redundancy and prints only unique items
                               -n : perform numeric sort
                               -r : performs reverse sorting
-23. uniq : it eliminates adjacent duplicate values. In some sense it is similar to                             sort but not fully.
+23. uniq : it eliminates adjacent duplicate values. In some sense it is similar to sort but not fully.
                 Commands:
                             -u : only print unique values
                             -d : only print duplicate  values
@@ -129,7 +129,7 @@ Commands:
 
                 You can execute a command on each result of the search 
                       find . -type f -exec cat {} \; 
-27. grep : used to grep to search in files, or combine it with pipes to filter the output                     of another command. 
+27. grep : used to grep to search in files, or combine it with pipes to filter the output of another command. 
              Syntax: grep command text.txt
               Options : 
                   -n : gives the number of line in which match is found
@@ -137,6 +137,30 @@ Commands:
                    -C : used to print after and before lines from matched line
                              ex- grep -nC 2 command text.txt
                          it will print 2 lines after and before the matched line
+
+28. du : disk usage 
+              It tells the size of directories
+              Commands:
+                                  -m : set the size to Megabyte
+                                  -g : set the size to Gigabyte
+                                  -h : set the size to human readable size
+                               
+29. df : disk free 
+            It tells information about disks or disk usage
+             Commands: -h : same working as in du
+30. history : every command is mesmorised into memory. It shows the history of every command you have entered.
+                     !15 : would print 15th command you have ran
+                    It can be used with grep through piping if you are trying to find any commnad and you remember only some part of it.
+31. ps (process status) : tells the status of process ran by user
+            ps ax : tells all process status
+            ps axww : fit to window as some processes all very long
+
+32. kill : terminates the process
+             kill or kill -SIGKILL or kill -9 <pid> : is gentler way to kill process
+             kill -15 : is brute force method or force quit
+             kill -l : we can see all options
+33. killall : if there are multiple same processes running we can use single killall command to kill processes.
+                   killall -kill <name_of_process>
 
 
 

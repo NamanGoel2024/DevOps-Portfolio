@@ -25,3 +25,9 @@
 25. diff 
 26. find 
 27. grep 
+28. du 
+29. df 
+30. history
+31. ps  
+32. kill 
+33. killall
