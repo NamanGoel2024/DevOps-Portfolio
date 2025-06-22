@@ -162,6 +162,44 @@ Commands:
 33. killall : if there are multiple same processes running we can use single killall command to kill processes.
                    killall -kill <name_of_process>
 
+34. Top : used to display dynamic real-time information about running processes in the system.
+
+35. jobs : used to tell processes which are paused or suspended. (ctrl + Z can suspend running long commands.
+36. fg : runs the program in foreground.
+           Ex- fg <pid>
+37. bg : runs the program in background.
+             Ex- bg <pid>
+               Or  find / -ctime -1 &
+38. gzip : used to compress files.
+            Ex- gzip <filename> : but it converts the original one top zipped file.
+            To keep file we can use  gzip -c <filename> > anotherfilename
+            Or gzip -k <filename>
+It can be used to decompress also by gzip -d <filename>
+To compress multiple files  gzip <filename> <filename> <filename> but it will compress them individually.
+
+39. gunzip : used to decompress file.
+      Ex- gunzip <filename>
+You can extract to a different filename using 
+          gunzip -c <filename> > anotherfilename
+
+40. tar :  used to create an archive, grouping multiple files in a single file.
+              Ex- tar -cf archive.tar file1 file2
+                -c : to create file
+                -f : to write or name file
+ Tar does not compress automatically, to compress also
+                        tar -czf archive.tar file1 file2 
+ To extract files from tar file 
+                tar -xf archive.tar -C directory
+                          -C : for moving to directory
+
+41. nano : you can directly edit your files or create them.
+   
+42. alias :  you can give names to specific/complex commands.
+              For ex- alias la=’ls -al’
+              But it will remain active till the session termination, to make it permanent it needs to be  written in bashsrc or bashprofile depending on the use case.
+          There’s a difference between double quotes and single quotes
+   alias isthis=”echo $PWD” This is solved at definition time. (fixed output always)
+   alias iscurrent=’echo $PWD’ This is solved at invocation time. (dynamic output)
 
 
 

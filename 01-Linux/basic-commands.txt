@@ -31,3 +31,12 @@
 31. ps  
 32. kill 
 33. killall
+34. top
+35. jobs
+36. fg
+37. bg
+38. gzip
+39. gunzip
+40. tar
+41. nano
+42. alias
