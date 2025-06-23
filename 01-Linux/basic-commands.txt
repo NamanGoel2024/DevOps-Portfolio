@@ -40,3 +40,11 @@
 40. tar
 41. nano
 42. alias
+43. xargs
+44. ln
+45. who
+46. su'
+47. sudo
+48. passwd
+49. chown
+50. chmod

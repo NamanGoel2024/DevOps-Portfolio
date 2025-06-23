@@ -201,6 +201,63 @@ You can extract to a different filename using
    alias isthis=”echo $PWD” This is solved at definition time. (fixed output always)
    alias iscurrent=’echo $PWD’ This is solved at invocation time. (dynamic output)
 
+43. xargs : used to convert input from standard input into arguments.
+              For ex- ls <directory> | rm
+It wont work as rm needs arguments to remove files. Here, xargs solves this problem
+               Ls <directory> | xargs rm
+44. ln : it is used to create links.
+            It makes 2 types of links:
+                    Symlink and hard link
+            Hardlink: it will remain even after original one is deleted.
+            Symlink : it will deleted if original one is deleted.
+Ex- ln <filename>
+     To create symlink we need to add -s
+             ln -s <filename>
+45. Who : The who command displays the users logged in to the system.Unless there are multiple user logged in, you will see your name multiple times only.
+
+46. su : it is used to switch users.
+         Ex- su <username> 
+    Directory does not change by default so we have to use
+               Su - <username>
+
+47. sudo : it is used to run a command as a root.
+48. passwd : it is used to change linux password.
+        As a root user, you can also change other users password by : 
+                   Sudo passwd <username> <newpasswprd>
+
+49. chown : Change owner
+        It is used to change owner of the file.
+           Ex- chown <new-user> <filename>
+There are two types of owner, first is owner who can read,write,modify the file and other is group owner who can read only.
+   To change group owner : 
+           Sudo chown <owner>:<groupname> file 
+  Or
+         chgrp <groupowner> <filename>
+
+50. Chmod : is used to change permissions of a directory or files.
+     The weird strings you see on each file line, like drwxr-xr-x, define the permissions of the file or folder.
+Let's dissect it.
+The first letter indicates the type of file:
+- means it's a normal file
+d means it's a directory
+l means it's a link
+Then you have 3 sets
+First set - owner
+Second set- group
+Third set - world(others)
+You type chmod followed by a space, and a letter:
+a stands for all
+u stands for user
+g stands for group
+o stands for others
+Here are some examples:
+chmod a+r filename #everyone can now read
+chmod a+rw filename #everyone can now read and write
+chmod o-rwx filename #others (not the owner, not in the same group of the file) cannot read, write or execute the file
+
+
+You can apply the same permissions to multiple personas by adding multiple letters before the +/-:
+chmod og-r filename #other and group can't read any more
 
 
 
