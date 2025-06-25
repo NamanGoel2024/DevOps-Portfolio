@@ -1,32 +1,49 @@
-              BASH(Bourne Again Shell) SHELL
+                      BASH(Bourne Again Shell) SHELL
+
 To check shell you are using we need to run
+
    Echo $SHELL
+
 To create bash files generally vim is used.
+
 Press i to insert and when written press esc and write :wq to write and quit.
+
 You don't need to check shell always at the start of script file we can add 
        #!/bin/bash  
+
 (after shebang(#!) provide the path given by echo $SHELL) It tells the script file which interpreter to use so we don't need to check the interpreter always.
 Firstly, we create a simple script calledby vim Hellother.sh 
+
 Under Hellothere.sh we write,
   #!/bin/bash
   echo Hello There
+
 Then we set user permission to execute by
 chmod u+x Hellothere.sh 
+
 Then we run, ./Hellothere.sh
+
 Output 
 Hello There
 
 
 Variables 
+
  vim hellothere.sh
+
 Under hellothere.sh, we write
+
  #!/bin/bash
 f_name=Naman
+
 l_name=Goel
 echo Hello there, $f_name $l_name
+
 Changing permission
+
 Chmod u+x hellothere.sh 
 Run now,
+
 ./hellothere.sh
 Output 
 Hello there Naman Goel
@@ -102,5 +119,6 @@ We can use for loop to print array by
 for items in ${My_First_List[@]}; do echo -n $items
 
 
-
-
+Function 
+We can make functions as in other programming languages in bash shell.Some commands are very repetitive so not to type again and again we can make a function.
+Ex- Refer to function.sh in bash scripts.
