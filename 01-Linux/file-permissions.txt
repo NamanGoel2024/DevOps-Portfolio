@@ -1,0 +1,18 @@
+#!/bin/bash
+# File: file-permissions.sh
+
+# Show permissions of a file
+ls -l sample.txt
+
+# Change permission to executable for owner
+chmod u+x script.sh
+
+# Remove write access from group
+chmod g-w file.txt
+
+# Change ownership (user and group)
+sudo chown username:groupname file.txt
+
+# View symbolic vs numeric mode
+chmod 755 myscript.sh
+
